@@ -1,7 +1,7 @@
-import { ExampleComponent } from '.'
+import Cloner from '.'
 
-describe('ExampleComponent', () => {
+describe('Cloner', () => {
   it('is truthy', () => {
-    expect(ExampleComponent).toBeTruthy()
+    expect(Cloner).toBeTruthy()
   })
 })

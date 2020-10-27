@@ -7,7 +7,8 @@
     "react": "file:../node_modules/react",
     "react-dom": "file:../node_modules/react-dom",
     "react-scripts": "file:../node_modules/react-scripts",
-    "react-cloner": "file:.."
+    "react-cloner": "file:..",
+    "bootstrap": "^4.5.3"
   },
   "scripts": {
     "start": "node ../node_modules/react-scripts/bin/react-scripts.js start",
