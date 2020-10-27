@@ -5,6 +5,7 @@
   "author": "BossBele",
   "license": "MIT",
   "repository": "LarvenLLC/react-cloner",
+  "homepage": "https://larvenllc.github.io/react-cloner",
   "main": "dist/index.js",
   "module": "dist/index.modern.js",
   "source": "src/index.js",
