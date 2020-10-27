@@ -4,6 +4,10 @@
 
 [![NPM](https://img.shields.io/npm/v/react-cloner.svg)](https://www.npmjs.com/package/react-cloner) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
+## Demo
+
+![React Cloner Demo](/example/public/react-cloner.gif)
+
 ## Install
 
 ```bash
