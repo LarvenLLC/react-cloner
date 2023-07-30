@@ -9,10 +9,11 @@ export interface ClonerProps {
   componentWrapperClassName?: string;
   deleteButtonClassName?: string;
   deleteButtonWrapperClassName?: string;
+  shouldRemoveDeleteWrapper?: boolean;
   addButtonPosition?: string;
   labelClassName?: string;
   onDelete?: () => void;
-  showLabel?: boolean;
+  shouldHideLabel?: boolean;
 }
 
 export interface ComponentWrapperProps {
@@ -23,7 +24,8 @@ export interface ComponentWrapperProps {
   componentWrapperClassName?: string;
   deleteButtonClassName?: string;
   deleteButtonWrapperClassName?: string;
+  shouldRemoveDeleteWrapper?: boolean;
   labelClassName?: string;
-  showLabel: boolean;
+  shouldHideLabel: boolean;
   onDelete: () => void;
 }
