@@ -42,7 +42,7 @@ export default function Cloner({
 
   function removeItems(number) {
     let tempArr = items
-    tempArr = tempArr.filter((el) => el != number)
+    tempArr = tempArr.filter((el) => el !== number)
     setItems(tempArr)
   }
 
