@@ -5,6 +5,7 @@ import React, {
   useEffect,
   useState
 } from 'react'
+import Primitive from './primitive'
 
 export default function Cloner({
   title,
@@ -15,10 +16,11 @@ export default function Cloner({
   componentWrapperClassName,
   deleteButtonClassName,
   deleteButtonWrapperClassName,
+  shouldRemoveDeleteWrapper,
   addButtonPosition,
   labelClassName,
   onDelete,
-  showLabel
+  shouldHideLabel
 }) {
   const [items, setItems] = useState([])
 
@@ -57,12 +59,13 @@ export default function Cloner({
             componentWrapperClassName={componentWrapperClassName}
             deleteButtonClassName={deleteButtonClassName}
             deleteButtonWrapperClassName={deleteButtonWrapperClassName}
+            shouldRemoveDeleteWrapper={shouldRemoveDeleteWrapper}
             labelClassName={labelClassName}
             onDelete={() => {
               removeItems(el)
               onDelete && onDelete()
             }}
-            showLabel={showLabel}
+            shouldHideLabel={shouldHideLabel}
           />,
           { increment: i + 1, key: el },
           null
@@ -80,7 +83,8 @@ export default function Cloner({
 Cloner.defaultProps = {
   initialItems: 1,
   addButtonPosition: 'right',
-  showLabel: true
+  shouldHideLabel: false,
+  shouldRemoveDeleteWrapper: false
 }
 
 function ComponentWrapper({
@@ -91,18 +95,22 @@ function ComponentWrapper({
   componentWrapperClassName,
   deleteButtonClassName,
   deleteButtonWrapperClassName,
+  shouldRemoveDeleteWrapper,
   labelClassName,
-  showLabel,
+  shouldHideLabel,
   onDelete
 }) {
   return (
     <>
-      {increment > 1 && showLabel ? (
+      {increment > 1 && !shouldHideLabel ? (
         <div className={labelClassName}>{`${title} ${increment}`}</div>
       ) : null}
       <div className={componentWrapperClassName} style={componentWrapperStyle}>
         <>{cloneElement(component, { increment })}</>
-        <div className={deleteButtonWrapperClassName}>
+        <Primitive
+          className={deleteButtonWrapperClassName}
+          asChild={shouldRemoveDeleteWrapper}
+        >
           {increment !== 1 ? (
             <button
               type='button'
@@ -112,7 +120,7 @@ function ComponentWrapper({
               Delete
             </button>
           ) : null}
-        </div>
+        </Primitive>
       </div>
     </>
   )
