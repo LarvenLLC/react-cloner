@@ -1,4 +1,10 @@
-import React, { cloneElement, Fragment, useEffect, useState } from 'react'
+import React, {
+  cloneElement,
+  Fragment,
+  useCallback,
+  useEffect,
+  useState
+} from 'react'
 
 export default function Cloner({
   title,
@@ -24,7 +30,7 @@ export default function Cloner({
     setItems(tempArr)
   }, [initialItems])
 
-  function addItem(e) {
+  const addItem = useCallback((e) => {
     e.preventDefault()
     const tempArr = []
     const len = items.length + 1
@@ -32,7 +38,7 @@ export default function Cloner({
       tempArr.push(i)
     }
     setItems([...items, tempArr])
-  }
+  }, [])
 
   function removeItems(number) {
     let tempArr = items
