@@ -1,25 +1,25 @@
 {
   "files": {
     "main.css": "/react-cloner/static/css/main.42cc8b22.chunk.css",
-    "main.js": "/react-cloner/static/js/main.ee55b1fd.chunk.js",
-    "main.js.map": "/react-cloner/static/js/main.ee55b1fd.chunk.js.map",
-    "runtime-main.js": "/react-cloner/static/js/runtime-main.603fbd9b.js",
-    "runtime-main.js.map": "/react-cloner/static/js/runtime-main.603fbd9b.js.map",
-    "static/css/2.c72968ad.chunk.css": "/react-cloner/static/css/2.c72968ad.chunk.css",
-    "static/js/2.aaa2eb69.chunk.js": "/react-cloner/static/js/2.aaa2eb69.chunk.js",
-    "static/js/2.aaa2eb69.chunk.js.map": "/react-cloner/static/js/2.aaa2eb69.chunk.js.map",
+    "main.js": "/react-cloner/static/js/main.c30f2b43.chunk.js",
+    "main.js.map": "/react-cloner/static/js/main.c30f2b43.chunk.js.map",
+    "runtime-main.js": "/react-cloner/static/js/runtime-main.ad91a6a0.js",
+    "runtime-main.js.map": "/react-cloner/static/js/runtime-main.ad91a6a0.js.map",
+    "static/css/2.cbdafa58.chunk.css": "/react-cloner/static/css/2.cbdafa58.chunk.css",
+    "static/js/2.40c33fd4.chunk.js": "/react-cloner/static/js/2.40c33fd4.chunk.js",
+    "static/js/2.40c33fd4.chunk.js.map": "/react-cloner/static/js/2.40c33fd4.chunk.js.map",
     "index.html": "/react-cloner/index.html",
-    "precache-manifest.4383a8fb21fb7ac9d15b71efa94ace7a.js": "/react-cloner/precache-manifest.4383a8fb21fb7ac9d15b71efa94ace7a.js",
+    "precache-manifest.9433f6fba430e0a77ad2b185fdb84e7b.js": "/react-cloner/precache-manifest.9433f6fba430e0a77ad2b185fdb84e7b.js",
     "service-worker.js": "/react-cloner/service-worker.js",
-    "static/css/2.c72968ad.chunk.css.map": "/react-cloner/static/css/2.c72968ad.chunk.css.map",
+    "static/css/2.cbdafa58.chunk.css.map": "/react-cloner/static/css/2.cbdafa58.chunk.css.map",
     "static/css/main.42cc8b22.chunk.css.map": "/react-cloner/static/css/main.42cc8b22.chunk.css.map",
-    "static/js/2.aaa2eb69.chunk.js.LICENSE.txt": "/react-cloner/static/js/2.aaa2eb69.chunk.js.LICENSE.txt"
+    "static/js/2.40c33fd4.chunk.js.LICENSE.txt": "/react-cloner/static/js/2.40c33fd4.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.603fbd9b.js",
-    "static/css/2.c72968ad.chunk.css",
-    "static/js/2.aaa2eb69.chunk.js",
+    "static/js/runtime-main.ad91a6a0.js",
+    "static/css/2.cbdafa58.chunk.css",
+    "static/js/2.40c33fd4.chunk.js",
     "static/css/main.42cc8b22.chunk.css",
-    "static/js/main.ee55b1fd.chunk.js"
+    "static/js/main.c30f2b43.chunk.js"
   ]
 }
