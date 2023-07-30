@@ -17,7 +17,7 @@ export default function Cloner({
   const [items, setItems] = useState([])
 
   useEffect(() => {
-    let tempArr = []
+    const tempArr = []
     for (let i = 0; i < initialItems; i++) {
       tempArr.push(i)
     }
@@ -26,8 +26,8 @@ export default function Cloner({
 
   function addItem(e) {
     e.preventDefault()
-    let tempArr = [],
-      len = items.length + 1
+    const tempArr = []
+    const len = items.length + 1
     for (let i = 2; i <= len; i++) {
       tempArr.push(i)
     }
@@ -97,7 +97,7 @@ function ComponentWrapper({
       <div className={componentWrapperClassName} style={componentWrapperStyle}>
         <>{cloneElement(component, { increment })}</>
         <div className={deleteButtonWrapperClassName}>
-          {increment != 1 ? (
+          {increment !== 1 ? (
             <button
               type='button'
               onClick={onDelete}
