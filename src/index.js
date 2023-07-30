@@ -40,11 +40,11 @@ export default function Cloner({
     setItems([...items, tempArr])
   }, [])
 
-  function removeItems(number) {
+  const removeItems = useCallback((number) => {
     let tempArr = items
     tempArr = tempArr.filter((el) => el !== number)
     setItems(tempArr)
-  }
+  }, [])
 
   return (
     <Fragment>
