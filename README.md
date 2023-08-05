@@ -63,13 +63,16 @@ function ContactPerson({ increment }) {
     <div className='row w-100 mx-auto'>
       <div className='pl-0 col col-12 col-md-4 form-group'>
         <label>Name</label>
-        <input name={`contact-person-name-${increment}`} class='form-control' />
+        <input
+          name={`contact-person-name-${increment}`}
+          className='form-control'
+        />
       </div>
       <div className='px-0 col col-12 col-md-5 form-group'>
         <label>Email</label>
         <input
           name={`contact-person-email-${increment}`}
-          class='form-control'
+          className='form-control'
         />
       </div>
       <div
@@ -80,7 +83,7 @@ function ContactPerson({ increment }) {
         <label>Phone</label>
         <input
           name={`contact-person-phone-${increment}`}
-          class='form-control'
+          className='form-control'
         />
       </div>
     </div>
