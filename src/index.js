@@ -32,21 +32,23 @@ export default function Cloner({
     setItems(tempArr)
   }, [initialItems])
 
-  const addItem = useCallback((e) => {
-    e.preventDefault()
-    const tempArr = []
-    const len = items.length + 1
-    for (let i = 2; i <= len; i++) {
-      tempArr.push(i)
-    }
-    setItems([...items, tempArr])
-  }, [])
+  const addItem = useCallback(
+    (e) => {
+      e.preventDefault()
+      const len = items.length + 1
+      setItems([...items, len])
+    },
+    [items]
+  )
 
-  const removeItems = useCallback((number) => {
-    let tempArr = items
-    tempArr = tempArr.filter((el) => el !== number)
-    setItems(tempArr)
-  }, [])
+  const removeItems = useCallback(
+    (number) => {
+      let tempArr = items
+      tempArr = tempArr.filter((el) => el !== number)
+      setItems(tempArr)
+    },
+    [items]
+  )
 
   return (
     <Fragment>
