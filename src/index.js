@@ -65,7 +65,9 @@ export default function Cloner({
             labelClassName={labelClassName}
             onDelete={() => {
               removeItems(el)
-              onDelete && onDelete()
+              if (typeof onDelete === 'function') {
+                onDelete(i)
+              }
             }}
             shouldHideLabel={shouldHideLabel}
           />,
