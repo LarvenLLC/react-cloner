@@ -45,9 +45,12 @@ export default function Cloner({
     (number) => {
       let tempArr = items
       tempArr = tempArr.filter((el) => el !== number)
+      if (typeof onDelete === 'function') {
+        onDelete(el)
+      }
       setItems(tempArr)
     },
-    [items]
+    [items, onDelete]
   )
 
   return (
@@ -65,9 +68,6 @@ export default function Cloner({
             labelClassName={labelClassName}
             onDelete={() => {
               removeItems(el)
-              if (typeof onDelete === 'function') {
-                onDelete(i)
-              }
             }}
             shouldHideLabel={shouldHideLabel}
           />,
